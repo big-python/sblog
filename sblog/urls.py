@@ -10,5 +10,5 @@ urlpatterns = patterns('',
 
     # url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^index/',include('sblog.apps.index.urls')),
+    url(r'^',include('sblog.apps.index.urls')),
 )
