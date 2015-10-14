@@ -1,0 +1,16 @@
+{% extends 'Base/baseCommon.html' %}
+{% block spe_css %}
+    <link rel="stylesheet" href="/static/css/login.css">
+{% endblock %}
+{% block content %}
+    <div id="login_content">
+        <h2><span style="color:silver">用户注册</span></h2><br>
+        <form action="/loginReg/doReg/" method="post">
+            {% csrf_token %}
+            新　用户:<input type="text" name="username"><br><br>
+            新　密码:<input type="password" name="password"><br><br>
+            确认密码:<input type="password" name="password"><br><br>
+            <input type="submit" value="点击注册">
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+#login_content{
+    margin-left:30%;
+    margin-top:15%;
+    border:1px solid #888888;
+    width:300px;
+    padding:20px;
+    border-radius: 10px;
+}
+.reg_tips{
+    font-size:10px;
+    margin-left:20px;
+    color:#888888;
+}
