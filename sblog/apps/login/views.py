@@ -11,8 +11,17 @@ def login(request):
     return render(request,'Account/login.html',context_instance=RequestContext(request))
 
 #登陆过程
-def doLogin():
-    return HttpResponse('登陆中')
+
+def doLogin(request):
+
+    username = request.POST['username'];
+    password = request.POST['password'];
+    user = userInfo.objects.filter(username=username,password=password);
+    if user:
+        return HttpResponse(1);
+    else:
+        return HttpResponse(0);
+    #return HttpResponse(username)
 
 
 def reg(request):
